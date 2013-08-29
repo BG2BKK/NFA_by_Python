@@ -1,6 +1,5 @@
 NFA_by_Pthony
 =============
-
 Abstract:
 This program is written in Ubuntu12.04 and in python 2.7. 
 This program use data structure 'list' and 'dict' in principle such as 'PDA' , 'NFA','DFA' which we learned in TOC to generate Rules and NFA from expression instead of using 're' module provided by python.
