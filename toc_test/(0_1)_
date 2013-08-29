@@ -1,0 +1,81 @@
+huang@huang-Lenovo:~/Desktop/python/toc$ python recReg.py -v '(1|0)*' tf
+the Regular for regex (1|0)* is:
+{'A': ['1', '0'], 'S': 'B', 'B': ['AB', '!']}
+the NFA generated from regex (1|0)* is
+{1: [{3: '!'}], 3: [{4: '!'}, {5: '!'}], 4: [{2: '!'}], 5: [{7: '!'}, {9: '!'}], 6: [{4: '!'}, {5: '!'}], 7: [{8: '1'}], 8: [{6: '!'}], 9: [{10: '0'}], 10: [{6: '!'}]}
+the Result of checkRule from textfile fname is :
+the line:	0101111 111111 1101010
+the column:	0
+the string:	0101111
+
+the line:	0101111 111111 1101010
+the column:	8
+the string:	111111
+
+the line:	0101111 111111 1101010
+the column:	15
+the string:	1101010
+
+the line:	101100 000000010 11111
+the column:	0
+the string:	101100
+
+the line:	101100 000000010 11111
+the column:	7
+the string:	000000010
+
+the line:	101100 000000010 11111
+the column:	17
+the string:	11111
+
+the line:	11111110 0000101 01000
+the column:	0
+the string:	11111110
+
+the line:	11111110 0000101 01000
+the column:	9
+the string:	0000101
+
+the line:	11111110 0000101 01000
+the column:	17
+the string:	01000
+
+the line:	0000 0000253411 11101264
+the column:	0
+the string:	0000
+
+the line:	011111111111111110 0011 10100101 11111100 001 000101
+the column:	0
+the string:	011111111111111110
+
+the line:	011111111111111110 0011 10100101 11111100 001 000101
+the column:	19
+the string:	0011
+
+the line:	011111111111111110 0011 10100101 11111100 001 000101
+the column:	24
+the string:	10100101
+
+the line:	011111111111111110 0011 10100101 11111100 001 000101
+the column:	33
+the string:	11111100
+
+the line:	011111111111111110 0011 10100101 11111100 001 000101
+the column:	19
+the string:	001
+
+the line:	011111111111111110 0011 10100101 11111100 001 000101
+the column:	46
+the string:	000101
+
+the line:	0101aba ba01a01ab 0101
+the column:	0
+the string:	0101
+
+the line:	0101010010 gfhsf10101 1101abbba00011001 01000asdfjh101010dfd01101010gdfg111010
+the column:	0
+the string:	0101010010
+
+the longest string is:		011111111111111110
+it's in the line:	011111111111111110 0011 10100101 11111100 001 000101
+the column is:		0

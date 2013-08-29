@@ -1,0 +1,149 @@
+huang@huang-Lenovo:~/Desktop/python/toc$ python recReg.py -v '(a|b)^' tf
+the Regular for regex (a|b)^ is:
+{'A': ['a', 'b'], 'C': 'D', 'S': 'AB', 'B': ['CB', '!'], 'D': ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0']}
+the NFA generated from regex (a|b)^ is
+{1: [{3: '!'}], 3: [{6: '!'}, {8: '!'}], 4: [{10: '!'}, {12: '!'}], 5: [{2: '!'}], 6: [{7: 'a'}], 7: [{4: '!'}], 8: [{9: 'b'}], 9: [{4: '!'}], 10: [{14: '!'}], 11: [{5: '!'}], 12: [{13: '!'}], 13: [{5: '!'}], 14: [{15: '.'}], 15: [{11: '!'}]}
+the Result of checkRule from textfile fname is :
+the line:	abababb aababab
+the column:	0
+the string:	abababb
+
+the line:	abababb aababab
+the column:	8
+the string:	aababab
+
+the line:	abab abba asafd baba
+the column:	0
+the string:	abab
+
+the line:	abab abba asafd baba
+the column:	5
+the string:	abba
+
+the line:	abab abba asafd baba
+the column:	10
+the string:	asafd
+
+the line:	abab abba asafd baba
+the column:	16
+the string:	baba
+
+the line:	bbba aabbaa abbb aba aabbbbb abcd
+the column:	0
+the string:	bbba
+
+the line:	bbba aabbaa abbb aba aabbbbb abcd
+the column:	5
+the string:	aabbaa
+
+the line:	bbba aabbaa abbb aba aabbbbb abcd
+the column:	12
+the string:	abbb
+
+the line:	bbba aabbaa abbb aba aabbbbb abcd
+the column:	17
+the string:	aba
+
+the line:	bbba aabbaa abbb aba aabbbbb abcd
+the column:	21
+the string:	aabbbbb
+
+the line:	bbba aabbaa abbb aba aabbbbb abcd
+the column:	29
+the string:	abcd
+
+the line:	ababaabaab babaabaabaa
+the column:	0
+the string:	ababaabaab
+
+the line:	ababaabaab babaabaabaa
+the column:	11
+the string:	babaabaabaa
+
+the line:	aababababbabaaaaabbbba
+the column:	0
+the string:	aababababbabaaaaabbbba
+
+the line:	babbabbbbbbbbbbbbbbbbb
+the column:	0
+the string:	babbabbbbbbbbbbbbbbbbb
+
+the line:	aaaaaaaaaaaaaabaaa
+the column:	0
+the string:	aaaaaaaaaaaaaabaaa
+
+the line:	bbbbbbbbabbbbbbbbbbbbb
+the column:	0
+the string:	bbbbbbbbabbbbbbbbbbbbb
+
+the line:	abfhgan gungbas hfsghabgj
+the column:	0
+the string:	abfhgan
+
+the line:	uebfsdu dfsijv i am ab aaaaa a aaaaaaab aaaabbbb abskfj aaaaabdfs aabfdg jkuhfds asbvfd ssdfega aaaaaaaabbbb aaaabbbbbaaaaaa dsfa dsfgbsrh sdsg
+the column:	17
+the string:	am
+
+the line:	uebfsdu dfsijv i am ab aaaaa a aaaaaaab aaaabbbb abskfj aaaaabdfs aabfdg jkuhfds asbvfd ssdfega aaaaaaaabbbb aaaabbbbbaaaaaa dsfa dsfgbsrh sdsg
+the column:	20
+the string:	ab
+
+the line:	uebfsdu dfsijv i am ab aaaaa a aaaaaaab aaaabbbb abskfj aaaaabdfs aabfdg jkuhfds asbvfd ssdfega aaaaaaaabbbb aaaabbbbbaaaaaa dsfa dsfgbsrh sdsg
+the column:	23
+the string:	aaaaa
+
+the line:	uebfsdu dfsijv i am ab aaaaa a aaaaaaab aaaabbbb abskfj aaaaabdfs aabfdg jkuhfds asbvfd ssdfega aaaaaaaabbbb aaaabbbbbaaaaaa dsfa dsfgbsrh sdsg
+the column:	17
+the string:	a
+
+the line:	uebfsdu dfsijv i am ab aaaaa a aaaaaaab aaaabbbb abskfj aaaaabdfs aabfdg jkuhfds asbvfd ssdfega aaaaaaaabbbb aaaabbbbbaaaaaa dsfa dsfgbsrh sdsg
+the column:	31
+the string:	aaaaaaab
+
+the line:	uebfsdu dfsijv i am ab aaaaa a aaaaaaab aaaabbbb abskfj aaaaabdfs aabfdg jkuhfds asbvfd ssdfega aaaaaaaabbbb aaaabbbbbaaaaaa dsfa dsfgbsrh sdsg
+the column:	40
+the string:	aaaabbbb
+
+the line:	uebfsdu dfsijv i am ab aaaaa a aaaaaaab aaaabbbb abskfj aaaaabdfs aabfdg jkuhfds asbvfd ssdfega aaaaaaaabbbb aaaabbbbbaaaaaa dsfa dsfgbsrh sdsg
+the column:	49
+the string:	abskfj
+
+the line:	uebfsdu dfsijv i am ab aaaaa a aaaaaaab aaaabbbb abskfj aaaaabdfs aabfdg jkuhfds asbvfd ssdfega aaaaaaaabbbb aaaabbbbbaaaaaa dsfa dsfgbsrh sdsg
+the column:	56
+the string:	aaaaabdfs
+
+the line:	uebfsdu dfsijv i am ab aaaaa a aaaaaaab aaaabbbb abskfj aaaaabdfs aabfdg jkuhfds asbvfd ssdfega aaaaaaaabbbb aaaabbbbbaaaaaa dsfa dsfgbsrh sdsg
+the column:	66
+the string:	aabfdg
+
+the line:	uebfsdu dfsijv i am ab aaaaa a aaaaaaab aaaabbbb abskfj aaaaabdfs aabfdg jkuhfds asbvfd ssdfega aaaaaaaabbbb aaaabbbbbaaaaaa dsfa dsfgbsrh sdsg
+the column:	81
+the string:	asbvfd
+
+the line:	uebfsdu dfsijv i am ab aaaaa a aaaaaaab aaaabbbb abskfj aaaaabdfs aabfdg jkuhfds asbvfd ssdfega aaaaaaaabbbb aaaabbbbbaaaaaa dsfa dsfgbsrh sdsg
+the column:	96
+the string:	aaaaaaaabbbb
+
+the line:	uebfsdu dfsijv i am ab aaaaa a aaaaaaab aaaabbbb abskfj aaaaabdfs aabfdg jkuhfds asbvfd ssdfega aaaaaaaabbbb aaaabbbbbaaaaaa dsfa dsfgbsrh sdsg
+the column:	109
+the string:	aaaabbbbbaaaaaa
+
+the line:	0101aba ba01a01ab 0101
+the column:	8
+the string:	ba01a01ab
+
+the line:	aaabaaacaacccccbcccmnmmmn
+the column:	0
+the string:	aaabaaacaacccccbcccmnmmmn
+
+the line:	aaabaaabb
+the column:	0
+the string:	aaabaaabb
+
+the line:	aaaaaabbaabb
+the column:	0
+the string:	aaaaaabbaabb
+
+the longest string is:		aaabaaacaacccccbcccmnmmmn
+it's in the line:	aaabaaacaacccccbcccmnmmmn
+the column is:		0

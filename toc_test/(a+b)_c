@@ -1,0 +1,12 @@
+the Regular for regex (a+b)*c is:
+{'A': 'Cb', 'S': 'Bc', 'B': ['AB', '!'], 'C': ['a', 'aC']}
+the NFA generated from regex (a+b)*c is
+{1: [{3: '!'}], 3: [{4: '!'}, {6: '!'}], 4: [{5: 'c'}], 5: [{2: '!'}], 6: [{8: '!'}], 7: [{4: '!'}, {6: '!'}], 8: [{11: '!'}], 9: [{10: 'b'}], 10: [{7: '!'}], 11: [{12: 'a'}], 12: [{9: '!'}, {11: '!'}]}
+the Result of checkRule from textfile fname is :
+the line:	abc
+the column:	0
+the string:	abc
+
+the longest string is:		abc
+it's in the line:	abc
+the column is:		0

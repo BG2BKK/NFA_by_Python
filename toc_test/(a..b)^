@@ -1,0 +1,42 @@
+huang@huang-Lenovo:~/Desktop/python/toc$ python recReg.py -v '(a..b)^' tf 
+the Regular for regex (a..b)^ is:
+{'A': 'aDEb', 'C': 'F', 'B': ['CB', '!'], 'E': ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0'], 'D': ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0'], 'F': ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0'], 'S': 'AB'}
+the NFA generated from regex (a..b)^ is
+{1: [{3: '!'}], 3: [{6: '!'}], 4: [{11: '!'}, {13: '!'}], 5: [{2: '!'}], 6: [{7: 'a'}], 7: [{8: '.'}], 8: [{9: '.'}], 9: [{10: 'b'}], 10: [{4: '!'}], 11: [{15: '!'}], 12: [{5: '!'}], 13: [{14: '!'}], 14: [{5: '!'}], 15: [{16: '.'}], 16: [{12: '!'}]}
+the Result of checkRule from textfile fname is :
+the line:	abababb aababab
+the column:	0
+the string:	abababb
+
+the line:	abab abba asafd baba
+the column:	0
+the string:	abab
+
+the line:	bbba aabbaa abbb aba aabbbbb abcd
+the column:	5
+the string:	aabbaa
+
+the line:	bbba aabbaa abbb aba aabbbbb abcd
+the column:	12
+the string:	abbb
+
+the line:	bbba aabbaa abbb aba aabbbbb abcd
+the column:	21
+the string:	aabbbbb
+
+the line:	ababaabaab babaabaabaa
+the column:	0
+the string:	ababaabaab
+
+the line:	aaabaaacaacccccbcccmnmmmn
+the column:	0
+the string:	aaabaaacaacccccbcccmnmmmn
+
+the line:	aaabaaabb
+the column:	0
+the string:	aaabaaabb
+
+the longest string is:		aaabaaacaacccccbcccmnmmmn
+it's in the line:	aaabaaacaacccccbcccmnmmmn
+the column is:		0
+
