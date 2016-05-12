@@ -29,13 +29,48 @@ The documents are 'clean.sh','NFA.py','recReg.py','Reg.py' and tf.
 
 ### How-TO:
 
+#### Installation
+
+Pygraphviz is required.
+
+```bash
+sudo apt-get install graphviz graphviz-dev graphviz-doc
+pip install pygraphviz
+```
+If there is something wrong listed below:
+
+```bash
+$ python recReg.py -v '(a+b)*c' tf
+Traceback (most recent call last):
+  File "recReg.py", line 4, in <module>
+    import NFA
+  File "/home/huang/workspace/python/NFA_by_Python/toc/NFA.py", line 2, in <module>
+    import pygraphviz as pgv
+  File "/usr/local/lib/python2.7/dist-packages/pygraphviz/__init__.py", line 58, in <module>
+    from .agraph import AGraph, Node, Edge, Attribute, ItemAttribute, DotError
+  File "/usr/local/lib/python2.7/dist-packages/pygraphviz/agraph.py", line 26, in <module>
+    from . import graphviz as gv
+  File "/usr/local/lib/python2.7/dist-packages/pygraphviz/graphviz.py", line 28, in <module>
+    _graphviz = swig_import_helper()
+  File "/usr/local/lib/python2.7/dist-packages/pygraphviz/graphviz.py", line 24, in swig_import_helper
+    _mod = imp.load_module('_graphviz', fp, pathname, description)
+ImportError: /usr/local/lib/python2.7/dist-packages/pygraphviz/_graphviz.so: undefined symbol: Agundirected
+
+```
+
+please try:
+
+	pip install pygraphviz --install-option="--include-path=/usr/include/graphviz" --install-option="--library-path=/usr/lib/graphviz/"
+
 Open Terminal and enter the source code directory.
 #### if you want to generate Rules from the regex '(a+b)*c' to recognize strings stored in tf and generate NFA for regex. Type the command:
+
 ```python
 python recReg.py -v '(a+b)*c' tf
 ```
 
 #### if you want to generate Rules from the regex '(a+b)*c' to recognize strings stored in tf and don't want to generate NFA. Type the command:
+
 ```python
 python recReg.py '(a+b)*c' tf
 ```
@@ -66,3 +101,4 @@ We still have bugs to be fixed.
 ```python
   This project is dedicated to DW
 ```
+
